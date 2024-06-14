@@ -1,0 +1,114 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pianote</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-HJVEPMLo10pX/5PK5dUIuy2BpY2C9l71GrfSap4LTVZfj7Jk2MzFvJ46S7YKw2mgcG0C4xjD+lMG7XX7epzYlQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="src/input.css">
+	</head>
+	<body>
+		<header>
+			<h1 class="font-tight">Play your favorite songs.</h1>
+			<p>You'll have all the tools you need to make sure you never miss <a href="https://www.facebook.com">Try the demo <strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" fill="#f05050"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z"/></svg></strong></a></p>
+
+
+		</header>
+		<main>
+			<div class="parallel-sections">
+					<section class="options-container">
+						<br>	
+						<br>
+						<div class="pop video-option active" onclick="showVideo(0)" id="popular-songs">
+							<div class="top-row">
+								<div class="w-9 sm:w-12 lg:w-16 flex-grow-0">
+									<img alt="point icon" class="ic" src="https://www.musora.com/musora-cdn/image/https://d21q7xesnoiieh.cloudfront.net/filters:quality(95)/marketing/pianote/membership/homepage/2023/songs-icon.svg" class="h-6 sm:h-7 lg:h-8 transition-opacity">
+								</div>
+								<strong>1000+ popular songs</strong>
+							</div>
+							<p class="popup pop-popup active">
+								Get note-for-note song breakdowns for every style, era, and skill level.
+							</p>
+						</div>
+						<div class="find video-option" onclick="showVideo(1)">
+							<div class="top-row">
+								<div class="w-9 sm:w-12 lg:w-16 flex-grow-0">
+									<img alt="point icon" class="ic" src="https://www.musora.com/musora-cdn/image/https://d21q7xesnoiieh.cloudfront.net/filters:quality(95)/marketing/pianote/membership/homepage/2023/tempo-icons.svg" class="h-6 sm:h-7 lg:h-8 transition-opacity">
+								</div>
+								<strong>Find the perfect tempo</strong>
+							</div>
+							<p class="popup find-popup">
+								Slow down any section of a song to make those tricky bars easier.
+							</p>
+						</div>
+						<div class="loop video-option" onclick="showVideo(2)">
+							<div class="top-row">
+								<div class="w-9 sm:w-12 lg:w-16 flex-grow-0">
+									<img alt="point icon" class="ic" src="https://www.musora.com/musora-cdn/image/https://d21q7xesnoiieh.cloudfront.net/filters:quality(95)/marketing/pianote/membership/homepage/2023/loop-icons.svg" class="h-6 sm:h-7 lg:h-8 transition-opacity">
+								</div>
+								<strong>Loop the trouble spots</strong>
+							</div>
+							<p class="popup loop-popup">
+								Create practice loops to play-through those difficult parts over and over.
+							</p>
+						</div>
+						<div class="improve video-option" onclick="showVideo(3)">
+							<div class="top-row">
+								<div class="w-9 sm:w-12 lg:w-16 flex-grow-0">
+									<img alt="point icon" class="ic" src="https://www.musora.com/musora-cdn/image/https://d21q7xesnoiieh.cloudfront.net/filters:quality(95)/marketing/pianote/membership/homepage/2023/timing-icons.svg" class="h-6 sm:h-7 lg:h-8 transition-opacity">
+								</div>
+								<strong>Improve your timing</strong>
+							</div>
+							<p class="popup improve-popup">
+								Use the built-in metronome – your new best friend for difficult rhythms.
+							</p>
+						</div>
+						<div class="take video-option" onclick="showVideo(4)">
+							<div class="top-row">
+								<div class="w-9 sm:w-12 lg:w-16 flex-grow-0">
+									<img alt="point icon" class="ic" src="https://www.musora.com/musora-cdn/image/https://d21q7xesnoiieh.cloudfront.net/filters:quality(95)/marketing/pianote/membership/homepage/2023/devices-icons.svg" class="h-6 sm:h-7 lg:h-8 transition-opacity">
+								</div>
+								<strong>Take your songs anywhere</strong>
+							</div>
+							<p class="popup take-popup text-header">
+								Accessible on any device, or printable, so you can play any song, any time.
+							</p>
+						</div>
+					</section>
+				
+				
+
+				<section class="flex-container">
+					<div class="video-container sm:order-1 rounded-l-xl overflow-hidden py-10 pl-10 max-w-xs sm:max-w-full flex-item" style="background-color:#1B2434;">
+						<video class="media-toggle active" muted autoplay loop playsinline preload="none">
+							<source src="https://musora-image-processing-cdn.s3.us-east-2.amazonaws.com/marketing/drumeo/membership/homepage/2024/songs-ultra.mp4" type="video/mp4">
+						</video>
+						<video class="media-toggle" muted autoplay loop playsinline preload="none">
+							<source src="https://musora-image-processing-cdn.s3.us-east-2.amazonaws.com/marketing/pianote/membership/homepage/2024/speed-feature-ultra.mp4" type="video/mp4">
+						</video>
+						<video class="media-toggle" muted autoplay loop playsinline preload="none">
+							<source src="https://musora-image-processing-cdn.s3.us-east-2.amazonaws.com/marketing/pianote/membership/homepage/2024/pianote-loop-ultra.mp4" type="video/mp4">
+						</video>
+						<video class="media-toggle" muted autoplay loop playsinline preload="none">
+							<source src="https://musora-image-processing-cdn.s3.us-east-2.amazonaws.com/marketing/pianote/membership/homepage/2024/metronome-feature-ultra.mp4" type="video/mp4">
+						</video>
+						<img src="https://d21q7xesnoiieh.cloudfront.net/fit-in/768x0/filters:quality(95)/marketing/pianote/membership/homepage/2024/devices-feature2.webp" alt="Devices Feature" class="media-toggle">
+					</div>
+				</section>
+			</div>
+			<br>
+			<center>
+				<button class="btn-see">SEE SONGS LIST</button>
+				<button class="btn-start">START FOR FREE →</button>
+				<br>
+				<em class="song-include">Songs included with Pianote+</em>
+			</center>
+		</main>
+		<footer>
+			<script src="video.js"></script>
+		</footer>
+		<script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+		<script src="video.js"></script>
+	</body>
+	</html>
