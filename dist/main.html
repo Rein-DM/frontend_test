@@ -6,12 +6,19 @@
 		<title>Pianote</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-HJVEPMLo10pX/5PK5dUIuy2BpY2C9l71GrfSap4LTVZfj7Jk2MzFvJ46S7YKw2mgcG0C4xjD+lMG7XX7epzYlQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="src/input.css">
+		<!-- <link rel="stylesheet" href="src/input.css"> -->
 	</head>
 	<body>
 		<header>
 			<h1 class="font-tight">Play your favorite songs.</h1>
-			<p>You'll have all the tools you need to make sure you never miss <a href="https://www.facebook.com">Try the demo <strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" fill="#f05050"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z"/></svg></strong></a></p>
+			<p id="openmodal">You'll have all the tools you need to make sure you never miss <a>Try the demo <strong><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" fill="#f05050"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z"/></svg></strong></a></p>
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<span class="close">&times;</span>
+					<p>This is the demo modal content.</p>
+				</div>
+			</div>	
+    </div>
 
 
 		</header>
@@ -107,8 +114,9 @@
 		</main>
 		<footer>
 			<script src="video.js"></script>
+			<script src="modal.js"></script>
 		</footer>
-		<script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
-		<script src="video.js"></script>
+		<!-- <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script> -->
+
 	</body>
 	</html>
